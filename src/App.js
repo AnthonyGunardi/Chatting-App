@@ -54,19 +54,18 @@ function SignIn() {
 
   return (
     <>
-      {/* <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button> */}
       <p class='paragraph'>Please Login First To Use Chat Feature</p>
       <div class='g-sign-in-button' onClick={signInWithGoogle}>
-    <div class='content-wrapper'>
-        <div class='logo-wrapper'>
+        <div class='content-wrapper'>
+          <div class='logo-wrapper'>
             <img src='https://developers.google.com/identity/images/g-logo.png'/>
+          </div>
+          <span class='text-container'>
+            <span>Sign in with Google</span>
+          </span>
         </div>
-        <span class='text-container'>
-      <span>Sign in with Google</span>
-    </span>
-    </div>
-</div>
-<Footer/>
+      </div>
+      <Footer/>
     </>
   )
 
