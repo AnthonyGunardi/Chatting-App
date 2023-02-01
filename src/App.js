@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
+import Footer from './Footer/Footer'
 
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
@@ -65,6 +66,7 @@ function SignIn() {
     </span>
     </div>
 </div>
+<Footer/>
     </>
   )
 
