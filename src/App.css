@@ -10,6 +10,8 @@ body {
 
 .App header {
   background-color: #181717;
+  background-image: url('./active-chat.jpg');
+  background-size: contain;
   height: 10vh;
   min-height: 50px;
   color: white;
@@ -23,6 +25,13 @@ body {
   z-index: 99;
   padding: 10px;
   box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  .App header {
+    background-image: url('./active-chat.jpg');
+    background-size: cover;
+  }
 }
 
 .App section {
@@ -85,14 +94,20 @@ input {
 
 button {
   background-color: #282c34; /* Green */
+  opacity: 0.3;
   border: none;
+  border-radius: 8px;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
   font-size: 1.25rem;
+}
+
+button:hover {
+  opacity: 1.0;
 }
 
 button:disabled {
